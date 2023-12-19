@@ -19,19 +19,19 @@ With a 20 line shell script and these tools, I don't have to spend a week of set
 
 The programs are: 
 Name	Purpose
-**ncpu**	Hammers the CPUs (can be slowed down to use a percentage)
-**ndisk**	Removed - use ndisk64
-**ndisk64**	Hammers the disks compiled for large files so it can access large files (many GBs)
-**ndiskaio**	Removed - use ndisk64
-**ndiskmio**	Removed. Uses the Modular IO AIX Expansion pack library must be installed (experimental not currently available)
-**nmem**	Hammers or touches memory
-**nmem64**	Hammers or touches memory - complied 64 bit so it has access large memory (many GBs)
-**nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU
-**nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second
-**nfile**	Creates, writes, and deletes files to push the JFS and JFS log hard
-**createfs.sh**	Example script to create the file systems - you need to edit the file for your system
-**dbstart.sh**	Example script to start a fake database RDBMS - you need to edit the file for your system
-**webstart.sh**	Example script to start a fake web server - you need to edit the file for your system
+ - **ncpu**	Hammers the CPUs (can be slowed down to use a percentage)
+ - **ndisk**	Removed - use ndisk64
+ - **ndisk64**	Hammers the disks compiled for large files so it can access large files (many GBs)
+ - **ndiskaio**	Removed - use ndisk64
+ - **ndiskmio**	Removed. Uses the Modular IO AIX Expansion pack library must be installed (experimental not currently available)
+ - **nmem**	Hammers or touches memory
+ - **nmem64**	Hammers or touches memory - complied 64 bit so it has access large memory (many GBs)
+ - **nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU
+ - **nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second
+ - **nfile**	Creates, writes, and deletes files to push the JFS and JFS log hard
+ - **createfs.sh**	Example script to create the file systems - you need to edit the file for your system
+ - **dbstart.sh**	Example script to start a fake database RDBMS - you need to edit the file for your system
+ - **webstart.sh**	Example script to start a fake web server - you need to edit the file for your system
 
 Warnings:
  - Do not consider these files as benchmark programs - they are hardware stress tools.
