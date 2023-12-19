@@ -17,8 +17,7 @@ There are a number of uses:
 4. For example, I run a Performance Tuning Expert Class and need to quickly setup many different workloads and problems to be solved. 
 With a 20 line shell script and these tools, I don't have to spend a week of setup time.
 
-The programs are: 
-Name	Purpose
+The programs are:
  - **ncpu**	Hammers the CPUs (can be slowed down to use a percentage)
  - **ndisk**	Removed - use ndisk64
  - **ndisk64**	Hammers the disks compiled for large files so it can access large files (many GBs)
@@ -29,6 +28,8 @@ Name	Purpose
  - **nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU
  - **nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second
  - **nfile**	Creates, writes, and deletes files to push the JFS and JFS log hard
+
+ - Useful scripts:
  - **createfs.sh**	Example script to create the file systems - you need to edit the file for your system
  - **dbstart.sh**	Example script to start a fake database RDBMS - you need to edit the file for your system
  - **webstart.sh**	Example script to start a fake web server - you need to edit the file for your system
@@ -48,7 +49,7 @@ Special ndisk64 version 75 notes:
 
 The Source Code is not available to the public.
  - This may change in 2024
- - 
+
 Warranty = none
  - It is strictly at your own risk.
  - It is possible to hang the entire server.
