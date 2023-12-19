@@ -11,28 +11,28 @@ The author focuses on POWER processor-based computers but these tools are additi
 ​
 There are a number of uses:
 
-1. Soak testing = check a new machine/disk to remove early life failures
-2. Prove performance of machine upgrades or alternative disk configurations
-3. Learn performance monitoring and tuning
+1. Soak testing = check a new machine/disk to remove early life failures.
+2. Prove performance of machine upgrades or alternative disk configurations.
+3. Learn performance monitoring and tuning.
 4. For example, I run a Performance Tuning Expert Class and need to quickly setup many different workloads and problems to be solved. 
-With a 20 line shell script and these tools, I don't have to spend a week of setup time.
+ - With a 20 line shell script and these tools, I don't have to spend a week of setup time.
 
 The programs are:
- - **ncpu**	Hammers the CPUs (can be slowed down to use a percentage)
- - **ndisk**	Removed - use ndisk64
- - **ndisk64**	Hammers the disks compiled for large files so it can access large files (many GBs)
- - **ndiskaio**	Removed - use ndisk64
- - **ndiskmio**	Removed. Uses the Modular IO AIX Expansion pack library must be installed (experimental not currently available)
- - **nmem**	Hammers or touches memory
- - **nmem64**	Hammers or touches memory - complied 64 bit so it has access large memory (many GBs)
- - **nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU
- - **nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second
- - **nfile**	Creates, writes, and deletes files to push the JFS and JFS log hard
+ - **ncpu**	Hammers the CPUs (can be slowed down to use a percentage).
+ - **ndisk**	Removed - use ndisk64.
+ - **ndisk64**	Hammers the disks compiled for large files so it can access large files (many GBs).
+ - **ndiskaio**	Removed - use ndisk64.
+ - **ndiskmio**	Removed. Uses the Modular IO AIX Expansion pack library must be installed (experimental not currently available).
+ - **nmem**	Hammers or touches memory.
+ - **nmem64**	Hammers or touches memory - complied 64 bit so it has access large memory (many GBs).
+ - **nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU.
+ - **nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second.
+ - **nfile**	Creates, writes, and deletes files to push the JFS and JFS log hard.
 
- - Useful scripts:
- - **createfs.sh**	Example script to create the file systems - you need to edit the file for your system
- - **dbstart.sh**	Example script to start a fake database RDBMS - you need to edit the file for your system
- - **webstart.sh**	Example script to start a fake web server - you need to edit the file for your system
+Useful scripts:
+ - **createfs.sh**	Example script to create the file systems - you need to edit the file for your system.
+ - **dbstart.sh**	Example script to start a fake database RDBMS - you need to edit the file for your system.
+ - **webstart.sh**	Example script to start a fake web server - you need to edit the file for your system.
 
 Warnings:
  - Do not consider these files as benchmark programs - they are hardware stress tools.
@@ -48,7 +48,7 @@ Special ndisk64 version 75 notes:
  - Use Direct I/O by using the /dev/rsda9 type volume but make sure it is NOT a file system or it trashes your files in a nanosecond.
 
 The Source Code is not available to the public.
- - This may change in 2024
+ - This may change in 2024.
 
 Warranty = none
  - It is strictly at your own risk.
