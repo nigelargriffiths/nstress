@@ -24,6 +24,7 @@ The programs are:
  - **nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU.
  - **nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second.
  - **nfile**	Creates, writes, and deletes files to push the JFS and JFS log hard.
+ - **nram** How fast if the memory and memory caching system.
 
 Useful scripts:
  - **createfs.sh**	Example script to create the file systems - you need to edit the file for your system.
