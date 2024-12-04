@@ -37,15 +37,14 @@ Warnings:
  - Do not compare Linux ppc64 and Linux x86_64 - I did not install the Advanced Tool Chain on ppc64 to get the optimized compiler, which would give up to 35% better performance.
  - Do not compare Linux with Linux - due to the different ages of the OS, different kernel levels, different libc, different GCC it is NOT a fair comparison. Note that some Distributions were NOT updated from current Online repositories and are the original Gold DVD level RPMs (RHEL and SLES) as I don't have repository access.
 
-Special ndisk64 version 75 notes:
+Special ndisk64 on Linux notes:
  - Always use the -M procs option to specify the number of processes to use or it hangs.
  - Recommended: using the -s size option to specify the file size
  - The Async I/O is completely missing in the code - don't believe the -? help.
  - The command-line option -C for CIO and -D for DIO are not available. 
  - Use Direct I/O by using the /dev/rsda9 type volume but make sure it is NOT a file system or it trashes your files in a nanosecond.
 
-The Source Code is not available to the public.
- - This may change in 2024.
+The Source Code is now available to the public - Since Decemeber 2024.
 
 Warranty = none
  - It is strictly at your own risk.
@@ -56,5 +55,6 @@ Warranty = none
 
 Warning
  - Note: ncpu when run by the root user tries to boost its priority.
- - This CPU priority boost effectively locks out an entire CPU. Which can be a good option to have in your toolbox.  
+ - This CPU priority boost effectively locks out an entire CPU. Which can be a good option to have in your toolbox.
+ - But over cook the options (too many CPUs) will effectively hang the entire operating system until the timeout -s max-seconds option. 
  - This tool effectively removes the CPU from your configuration. Note: Since 2010, PowerVM dynamic LPAR changes (DLPAR) are a safer way.
