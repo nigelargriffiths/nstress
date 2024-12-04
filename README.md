@@ -19,11 +19,7 @@ There are a number of uses:
 
 The programs are:
  - **ncpu**	Hammers the CPUs (can be slowed down to use a percentage).
- - **ndisk**	Removed - use ndisk64.
  - **ndisk64**	Hammers the disks compiled for large files so it can access large files (many GBs).
- - **ndiskaio**	Removed - use ndisk64.
- - **ndiskmio**	Removed. Uses the Modular IO AIX Expansion pack library must be installed (experimental not currently available).
- - **nmem**	Hammers or touches memory.
  - **nmem64**	Hammers or touches memory - complied 64 bit so it has access large memory (many GBs).
  - **nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU.
  - **nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second.
