@@ -20,7 +20,7 @@ There are a number of uses:
 The programs are:
  - **ncpu**	Hammers the CPUs (can be slowed down to use a percentage).
  - **ndisk64**	Hammers the disks compiled for large files so it can access large files (many GBs).
- - **nmem64**	Hammers or touches memory - complied 64 bit so it has access large memory (many GBs).
+ - **nmem**	Hammers or touches memory - complied 64 bit so it has access large memory (many GBs).
  - **nipc**	Tests shared memory, semaphores, and shared messages in a ring of processes - takes 1 CPU.
  - **nlog**	Generates output like error messages. You specify the data size in kilobytes (KB) output per second.
  - **nfile**	Creates, writes, and deletes files to push the JFS and JFS log hard.
